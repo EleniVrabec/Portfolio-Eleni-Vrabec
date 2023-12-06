@@ -1213,7 +1213,7 @@ z-index: 100;
 
 .home::before {
     content: "";
-    background-image: url(/img/bck-mount.jpg);
+    background-image: url(./img/bck-mount.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

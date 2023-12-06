@@ -990,6 +990,23 @@ footer a{
         z-index: -1;
         opacity: 0.5; /* Adjust the opacity as needed for the desired darkness */
     }
+    .colored-text{
+        position: relative;
+        
+      }
+      
+      .colored-text::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background-color: #c8ffbe;
+      z-index: -1;
+      transition: width 1s ease;
+      }
+      
     
     .navigation{
         position: fixed;
@@ -1189,6 +1206,23 @@ z-index: 100;
 .description > .btn{
     margin-left: 0;
 }
+.colored-text{
+    position: relative;
+    
+  }
+  
+  .colored-text::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #c8ffbe;
+  z-index: -1;
+  transition: width 1s ease;
+  }
+  
 .section{
     display: block;
     height: 100vh;
@@ -1239,6 +1273,7 @@ z-index: 100;
 }
 .mountain{
     background-repeat: no-repeat;
+    min-height: 100vh;
     background-size:cover;
     position: absolute;
     top: 0;

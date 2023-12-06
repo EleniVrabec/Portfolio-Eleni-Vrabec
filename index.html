@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+   <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+   <script src="./js/script.js"></script>
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.3/pixi.min.js"></script>
+
+
+</head>
+<body>
+   <div class="scrollToTop-btn flex-center">
+    <i class="fas fa-arrow-up"></i>
+   </div>
+    
+<header>
+    <div class="nav-bar">
+        <a href="" class="logo"><span class="colored-text">WebCulture<br> <span class="small-logo-text">at its finest</span></span> </a>
+        <div class="navigation">
+            
+            <div class="nav-items" id="nav-items">
+               
+                <div class="nav-close-btn"><!-- <i class="fa-solid fa-x"> --></i></div>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    <div class="nav-menu-btn"><i class="fa-solid fa-bars"></i></div>
+    </div>
+</header>
+<div class="media-icons">
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/EleniVrabec"><i class="fab fa-github"></i></a>
+</div> 
+<section  class="home flex-center" id="home">
+    
+ <div class="home-container">
+    
+    <div class="info">
+      <h2 class="h2"> <span class="helloW">hello world!</span>   <br> <span class="colored-text"  > <b>ELENI VRABEC</b> </span></h2>
+        <h3>a web development student with a passion for e-commerce</h3>
+        <p>I'm here to share my journey in crafting online magic. <br> Let's venture into the realm where coding meets creativity.</p>
+        <a href="mailto:vrabeceleni@gmail.com"  class="btn-home">Contact Me <i class="fas fa-arrow-circle-right"></i></a>
+        <!-- <a href="" class="btn">Download CV <i class="fas fa-download"></i></a>    -->
+    </div>
+   
+ </div>
+
+<a href="#about" class="scroll-down"> Scroll Down <i class="fas fa-arrow-down"></i></a>
+<div class="plat"><img src="/img/plat-crop.png" alt=""></div>
+<!-- <div id="particles-js"></div> -->
+ <canvas id="fogCanvas"></canvas> 
+</section>
+
+<section class="about section" id="about">
+  <div class="container flex-center">
+    <h1 class="section-title-01">About me</h1>
+    <h2 class="section-title-02">About me</h2>
+    <div class="content flex-center">
+        <div class="about-img">
+            <img src="./img/me.png" alt="">
+        </div>
+        <div class="about-info">
+            <div class="description">
+                <h3>I'm<span class="colored-text"> Eleni</span></h3>
+                <h4>A dedicated web development student
+                </h4>
+                <p>Driven by a passion for creating captivating digital experiences,
+                     my journey into web design is fueled by the enthusiasm of a nature lover. 
+                     With an unwavering ambition to master web development, I am constantly hungry to learn and grow, 
+                     thriving in the dynamic field by staying at the forefront of trends and technologies. 
+                     Bringing laser-sharp focus and impeccable organizational skills to every project, 
+                     I aim to enhance the beauty and functionality of the web.
+                </p> <br>
+                <!-- <p>I am driven by my passion for creating captivating digital experiences. My journey into the world of web design is infused with the enthusiasm of a nature lover, 
+                and I'm always inspired by the intricate details I encounter.</p>
+                <p>With an unwavering ambition to master the art of web development,
+                     I find myself constantly hungry to learn and grow. The dynamic nature of this field is my playground, where
+                     I thrive on staying at the forefront of the latest trends and technologies.</p>
+                 <p>I bring a laser-sharp focus and impeccable organizational skills to every project I undertake. Whether it's crafting pixel-perfect designs or writing elegant code, 
+                    I'm here to make the web a more beautiful and functional place.</p> -->
+                   <h4>Join me in my web development adventure, and together, we'll create digital wonders that leave a lasting impact."</h4>
+                   <a class="btn" href="https://drive.google.com/file/d/1WK_riMuur_NZeXBkuPW_r92wbYXLN258/view?usp=sharing" >Download CV <i class="fas fa-download"></i></a> 
+            </div>
+        </div>
+       
+    </div>
+   
+  </div>
+
+
+</section>
+
+<section class="skills section" id="skills">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Skills</h1>
+        <h2 class="section-title-02">Skills</h2>
+        <div class="content">
+            <div class="skills-description">
+<h3>Education & Skills</h3>
+<p>As a web development student, 
+    my foundation is shaped by diverse learning experiences in 
+    this dynamic field. I bring forth a versatile skill set complemented
+     by a strong academic background. Explore below to uncover the layers 
+     of my education and skills, 
+    defining my profile in the realm of web development.</p>
+
+            </div>
+            <div class="skills-info education-all">
+                <div class="education">
+                    <h4><label >Education</label></h4>
+                    <ul class="edu-list">
+                        <li class="item">
+                            <span class="year">2023 - Present</span>
+                            <p>Grit-Academy Malmö -
+                                Web developer specializing in e-commerce</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">2023 - Present</span>
+                            <p>Grit-Academy Malmö - 
+                                Front End Web Developer - flex</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">2021 - 2022</span>
+                            <p>Academy for Software Testing, Skopje 
+                                - Seavus education and development center - distance</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">2003 - 2007</span>
+                            <p>Bachelor of Arts in Political Science, department: Diplomacy and International Politics. - Skopje, Macedonia </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h4><label for="">Skills</label></h4>
+                    <ul class="bars">
+                        <li class="bar">
+                            <div class="info">
+                                <span>HTML</span>
+                               <!--  <span>95%</span> -->
+                            </div>
+                           <!--  <div class="line html"></div> -->
+                        </li>
+
+                        <li class="bar">
+                            <div class="info">
+                                <span>CSS</span>
+                               <!--  <span>85%</span> -->
+                            </div>
+                            <!-- <div class="line css"></div> -->
+                        </li>
+
+                        <li class="bar">
+                            <div class="info">
+                                <span>Javascript</span>
+                              <!--   <span>75%</span> -->
+                            </div>
+                            <!-- <div class="line javascript"></div> -->
+                        </li>
+
+                         <li class="bar">
+                            <div class="info">
+                                <span>Javascript</span>
+                             <!--   <span>25%</span>  -->
+                            </div>
+                           <!--  <div class="line node"></div> --> 
+                        </li> 
+
+                        <li class="bar">
+                            <div class="info">
+                                <span>PHP</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>MySQL</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>NEXT.js</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>REST APIs</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Node.js</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Express.js</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>React.js</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Figma</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>UX Research</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Design Thinking</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>Wireframing</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                        <li class="bar">
+                            <div class="info">
+                                <span>C#-basic</span>
+                                <!-- <span>50%</span> -->
+                            </div>
+                           <!--  <div class="line php"></div> -->
+                        </li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h4><label >Languages</label></h4>
+                    <ul class="edu-list">
+                        <li class="item">
+                            <span class="year">Macedonian</span>
+                            <p>Mother tongue</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">Swedish</span>
+                            <p>Fluency in speech and writing</p>
+                        </li>
+                        <li class="item">
+                            <span class="year">English</span>
+                            <p>Fluency in speech and writing</p>
+                        </li>
+                    </ul>
+                </div>
+               <!--  <div class="education">
+                    <h4><label for="">Awards</label></h4>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mountain">  <!-- <img src="./img/bck-mount.jpg"> --> </section>
+<section class="portfolio section" id="portfolio">
+
+    <div class="container flex-center">
+        <h1 class="section-title-01">Portfolio</h1>
+        <h2 class="section-title-02">Portfolio</h2>
+        <div class="content">
+            <div class="portfolio-list">
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+
+                        </div>
+                        <div class="info">
+                            <h3>Weather App</h3>
+                            <span>HTML-CSS-Vanilla Javascript-RESTful API</span>
+                        </div>
+                        <img src="./img/weather-app.png" alt="">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Weather App</h3>
+                            <img src="./img/weather-app.png" alt="">
+                            <p>For my final project in the JavaScript 1 course, 
+                                I created a Weather App using HTML, CSS, and Vanilla JavaScript,
+                                 integrating APIs to provide real-time weather information. 
+                                 This project reflects my proficiency in front-end development and API utilization.</p>
+                                 <button class="btn"> <a href="https://github.com/EleniVrabec/webb23-js1-slutprojekt-Eleni-Vrabec-">Link to Github repo</a> </button>
+                                 <button class="btn"> <a href="https://elenivrabec.github.io/webb23-js1-slutprojekt-Eleni-Vrabec-/">Link to page</a> </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+
+                        </div>
+                        <div class="info">
+                            <h3>UI/UX - Hairly</h3>
+                            <span>Figma</span>
+                        </div>
+                        <img src="./img/figma.png" alt="">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>UI/UX</h3>
+                            <img src="./img/figma.png" alt="">
+                            <p>As part of my UX/UI course, I completed the "Hairly" project using Figma. 
+                                This project involved designing wireframes and prototypes for a line of hair products.
+                                 I also created a persona to better understand and cater to the target audience.
+                                 Hairly demonstrates my ability to create visually appealing and user-friendly designs.</p>
+                                 <button class="btn"> <a href="https://www.figma.com/file/Nlk1hU1OSCOl5akrFRMlsr/SlutProject?type=design&node-id=0%3A1&mode=design&t=wWL1GLXyRGEmrVEj-1">Link to Github repo</a> </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+
+                        </div>
+                        <div class="info">
+                            <h3>E-commerce webb-app</h3>
+                            <span>Node.js-Express.js-REACT-RESTful API</span>
+                        </div>
+                        <img src="./img/shar.png" alt="">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>E-commerce webb-app</h3>
+                            <img src="./img/shar-1.png" alt="">
+                            <p>As the concluding project for my JavaScript 2 course, 
+                                I built an E-commerce web application. 
+                                This online shopping platform is crafted with Node.js, Express.js, and React,
+                                showcasing a seamless blend of these technologies. Additionally, a RESTful API was 
+                                implemented to facilitate smooth communication between the front-end and back-end components. 
+                                This project represents the peak of my learning journey in the JavaScript 2 course, 
+                                demonstrating my ability to create a fully functional and comprehensive E-commerce platform.</p>
+                                <button class="btn"> <a href="https://github.com/EleniVrabec/webb23-js2-slutprojekt-Eleni-Vrabec">Link to Github repo</a> </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+
+                        </div>
+                        <div class="info">
+                            <h3>Cocktail bar</h3>
+                            <span>HTML-CSS-Vanilla Javascript-RESTful API</span>
+                        </div>
+                        <img src="./img/coctail.png" alt="">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Cocktail bar</h3>
+                            <img src="./img/coctail-menu.png" alt="">
+                            <p>I undertook a personal project focused on a Cocktail Bar, 
+                                employing HTML, CSS, and Vanilla JavaScript. 
+                                This initiative also involves the integration of a RESTful API 
+                                to enhance the functionality and content of the bar's web application. 
+                                While this project remains a work in progress, it serves as a valuable 
+                                exercise for me to further develop my skills and explore the integration of web technologies.</p>
+                                <button class="btn"> <a href="https://github.com/EleniVrabec/coctail-bar-Eleni-Vrabec">Link to Github repo</a> </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+
+                        </div>
+                        <div class="info">
+                            <h3>Rock Paper Scissors</h3>
+                            <span>HTML-CSS-Vanilla Javascript</span>
+                            <span>HTML-CSS-Javascript-Node.js-Express.js-RESTful API</span>
+                        </div>
+                        <img src="./img/RPS-game.png" alt="">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>Rock Paper Scissors</h3>
+                            <img src="./img/RPS_high-game.png" alt="">
+                            <p>I designed two versions of the same game: Rock Paper Scissors. 
+                                The first one is a straightforward edition using HTML, CSS,
+                                 and basic JavaScript. In the second version, I upgraded the game by 
+                                 adding a high-score feature. For this enhanced version, I used HTML, CSS, 
+                                 and JavaScript for the game functionality, while incorporating Node.js with 
+                                 Express for the backend to manage the high-score system. These projects showcase my 
+                                 ability to evolve and improve a basic concept, enhancing user experience
+                                  and functionality in the process.
+
+                            </p>
+                            <button class="btn"> <a href="https://github.com/EleniVrabec/-webb23-js-mp1-Eleni-Vrabec">Link to Github repo</a> </button>
+                            <button class="btn"> <a href="https://elenivrabec.github.io/webb23-js1-mp2-Eleni-Vrabec/">Link to page</a> </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="img-card-container">
+                    <div class="img-card">
+                        <div class="overlay">
+
+                        </div>
+                        <div class="info">
+                            <h3>My blogg</h3>
+                            <span>Next.js - MongoDB</span>
+                        </div>
+                        <img src="./img/blog1.png" alt="">
+                    </div>
+                    <div class="portfolio-model flex-center">
+                        <div class="portfolio-model-body">
+                            <i class="fas fa-times portfolio-close-btn"></i>
+                            <h3>My blogg </h3>
+                            <img src="./img/blog3.png" alt="">
+                            <p>This project, developed as part of my JavaScript 3 course, is a blog crafted in NEXT.js. 
+                                It enables users to register, log in, and create new posts. Additionally, it incorporates CRUD operations,
+                                 allowing users to create and delete posts. While the core functionality is in place, 
+                                 there are still ongoing developments required to bring the website to its ultimate version. </p>
+                                 <button class="btn"> <a href="https://github.com/EleniVrabec/myblogapp-EleniVrabec">Link to Github repo</a> </button>
+                        </div>
+                    </div>
+                </div>
+            
+
+            </div>
+        </div>
+       
+    </div>
+    <div class="get-in-touch sub-section">
+        <div class="container">
+            <div class="content flex-center">
+                <div class="contact-card flex-center">
+                    <div class="title">
+                        <h4>Like what</h4>
+                        <h3>you see?</h3>
+                        <h2>Visit my Github</h2>
+                    </div>
+                    <div class="contact-btn">
+                        <a href="https://github.com/EleniVrabec" class="btn">View my repos <i class="fas fa-paper-plane"></i></a>
+                    </div>
+    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section class="get-in-touch-section section">
+<div class="get-in-touch sub-section">
+    <div class="container">
+        <div class="content flex-center">
+            <div class="contact-card flex-center">
+                <div class="title">
+                    <h4>Like what</h4>
+                    <h3>you see?</h3>
+                    <h2>Visit my Github</h2>
+                </div>
+                <div class="contact-btn">
+                    <a href="https://github.com/EleniVrabec" class="btn">View my repos <i class="fas fa-paper-plane"></i></a>
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+</div>
+</section> -->
+<section class="contact section" id="contact">
+    <div class="container flex-center">
+        <h1 class="section-title-01">Contact Me</h1>
+        <h2 class="section-title-02">Contact Me</h2>
+        <div class="content">
+            <div class="contact-left">
+                <h2>Let's discuss our future cooperation</h2>
+                <ul class="contact-list">
+                    <li>
+                        <h3 class="item-title"><i class="fas fa-phone"></i>Phone</h3>
+                        <span>+46 0701419171</span>
+                    </li>
+                    <li>
+                        <h3 class="item-title"><i class="fas fa-envelope"></i>Email Address</h3>
+                        <span><a href="mailto:eleni-eni@hotmail.com">eleni-eni@hotmail.com</a></span>
+                    </li>
+                  <!--   <li class="contact-list">
+                        <h3 class="item-title"><i class="fas fa-map-marker-alt"></i>Official Address</h3>
+                        <span>Rågångsvägen 3 Arlöv,Sweden</span>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="contact-right">
+                <p>I'm always open to discussing work <br><span>practice or future self development</span></p>
+            <form action="https://formsubmit.co/74dfac49514387e9b70cf8d7e0aa5b15" method="POST" class="contact-form"  onsubmit="clearForm()">
+                <div class="first-row">
+                    <input type="text" name="Name" placeholder="Name" required>
+                </div>
+                <div class="second-row">
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <input type="text" name="Subject" placeholder="Subject">
+                </div>
+                <div class="third-row">
+                    <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+                </div>
+                <button class="btn" type="submit">Send Message<i class="fas fa-paper-plane"></i></button>
+            </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="about group">
+            <h2>Eleni</h2>
+            <p>Web Developer Student</p>
+            <a href="#about">About me</a>
+        </div>
+        <div class="hr"></div>
+        <div class="info group">
+            <h3>More</h3>
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#skills">Portfolio</a></li>
+                <li><a href="#skills">Contact</a></li>
+            </ul>
+        </div>
+        <div class="hr"></div>
+        <div class="follow group">
+
+            <h3>Follow</h3>
+        <ul>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/EleniVrabec"><i class="fab fa-github"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+
+        </div>
+        
+
+    </div>
+    <div class="footer-copyright group"><p>Eleni Vrabec. All rights reserved</p></div>
+</footer>
+</body>
+</html>

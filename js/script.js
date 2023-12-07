@@ -105,7 +105,7 @@ const sections = document.querySelectorAll("section");
        // reset: true,
         distance:'60px',
         duration:1300,
-        delay:100
+        delay:50
     
     });
   

@@ -13,7 +13,7 @@ const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
 
 imgCards.forEach((imgCard, i) => {
     imgCard.addEventListener("click", () => {
-        portfolioModals[i].classList.add("active");
+        portfolioModals[i].classList.toggle("active");
         console.log("Function executed");
     });
 });

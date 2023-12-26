@@ -582,6 +582,7 @@ margin-bottom: 20px;
     flex-direction: column;
     height: 60vh;
     justify-content: space-between;
+    
 
 }
 
@@ -594,6 +595,7 @@ margin-bottom: 20px;
     padding: 15px;
     width: 50%;
     transition:.3s ease;
+    border-bottom: 3px solid var(--second-color);
 }
 .bar .info{
     display: flex;
@@ -899,7 +901,11 @@ margin-bottom: 20px;
     cursor: pointer;
 
 }
-
+.pic-me-bw{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
 footer{
     display: flex;
     justify-content: center;

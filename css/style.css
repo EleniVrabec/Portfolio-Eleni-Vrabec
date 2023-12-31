@@ -286,7 +286,7 @@ header.sticky .nav-bar{
 .btn-home:hover{
     background-color: var(--accent-color);
     color: var(--first-color);
-    transition: 1s ease;
+    transition: 3s ease-in-out;
     cursor: pointer;
     z-index: 200;
 }
@@ -326,7 +326,7 @@ header.sticky .nav-bar{
     font-size:  var(--normal-font-size);
     font-weight: 500;
     margin-top: 40px;
-    margin-left: 15px;
+    margin-left: 5px;
     z-index: 100;
 }
 .home .scroll-down i{
@@ -507,7 +507,8 @@ header.sticky .nav-bar{
 }
 
 /* skills section */
-
+/* ------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------- */
 .skills .container .content {
     column-gap: 40px;
     width: 100%;
@@ -905,6 +906,7 @@ margin-bottom: 20px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    border: 2px solid black;
 }
 footer{
     display: flex;
@@ -1293,7 +1295,7 @@ z-index: 100;
 .btn-home:hover{
     background-color: var(--accent-color);
     color: (var(--first-color));
-    transition: 1s ease-in-out;
+    transition: 1s ease-in;
     cursor: pointer;
 }
 

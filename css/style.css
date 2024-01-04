@@ -984,6 +984,7 @@ footer a{
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 0;
+        overflow-x: hidden;
     }
     .home {
         position: relative;
@@ -1273,9 +1274,10 @@ margin-bottom: 50px;
 
 }
 
-@media screen and (max-width:730px) {
+@media screen and (max-width:600px) {
     *{
         height: auto;
+        overflow-x: hidden;
     }
     body{
         display: flex;

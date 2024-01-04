@@ -1221,10 +1221,13 @@ footer a{
 
      flex-wrap: wrap; 
     flex-direction:column ;
-    height: 80vh;
+    height: 70vh;
     width: 90%;
     justify-content:space-evenly;
 
+}
+.bar{
+    width: 50%;
 }
 /* ------------------------------- */
 .contact .content{

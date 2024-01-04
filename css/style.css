@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&family=Montserrat:wght@400;500;600;700&family=Noto+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Exo+2:wght@600;700&family=Montserrat:wght@400;500;600;700&family=Noto+Sans:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 
 
 :root{
@@ -61,7 +61,8 @@ li{
     display: block;
     position: relative;
     font-weight: 600;
-    font-family: 'Exo 2', sans-serif;
+     font-family: 'Exo 2', sans-serif; 
+  /*  font-family: 'Condiment', cursive; */
 
     color: #0e2431;
 }
@@ -724,6 +725,7 @@ margin-bottom: 20px;
    display: none;
     opacity: 0;
     transition: .3s ease;
+    overflow-y: auto;
 }
 .portfolio-model.active{
    /*  visibility: visible; */
@@ -732,6 +734,7 @@ margin-bottom: 20px;
     opacity: 1;
     top: 0px;
     left: 200;
+    overflow-y: auto;
 
 }
 /* .portfolio-model-body.active{
@@ -1161,6 +1164,7 @@ footer a{
    display: none;
     opacity: 0;
     transition: .3s ease;
+    overflow-y: auto;
 }
 .portfolio-model.active{
    /*  visibility: visible; */
@@ -1169,7 +1173,7 @@ footer a{
     opacity: 1;
     top: 0px;
     left: 0;
-
+    overflow-y: auto;
 }
 /* .portfolio-model-body.active{
     margin-left: 50%;
@@ -1185,9 +1189,9 @@ footer a{
     padding: 40px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    transform: translateY(-50px);
-   
+    transform: translateY(-50px); 
     transition: .5s ease;
+
 }
 
 .portfolio-model.active .portfolio-model-body{
@@ -1210,6 +1214,16 @@ footer a{
     width: 100%;
     margin: 20px 0;
     border-radius: 10px;
+}
+.bars{
+    display: flex;
+
+     flex-wrap: wrap; 
+    flex-direction:column ;
+    height: 80vh;
+    width: 90%;
+    justify-content:space-evenly;
+
 }
 /* ------------------------------- */
 .contact .content{
@@ -1499,7 +1513,7 @@ section.mountain{
     display: flex;
      flex-wrap: wrap; 
     flex-direction:column ;
-    height: 70vh;
+    height: 80vh;
     justify-content:space-between;
 
 }
@@ -1535,6 +1549,7 @@ section.mountain{
    display: none;
     opacity: 0;
     transition: .3s ease;
+    overflow-y: auto;
 }
 .portfolio-model.active{
    /*  visibility: visible; */
@@ -1543,6 +1558,7 @@ section.mountain{
     opacity: 1;
     top: 0px;
     left: 0;
+    overflow-y: auto;
 
 }
 /* .portfolio-model-body.active{

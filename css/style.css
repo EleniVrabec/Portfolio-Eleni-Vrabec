@@ -1126,7 +1126,7 @@ footer a{
     z-index: 100;
     margin-left: 40px;
     width: 40px;
-    height: 40px;
+    height: 100px;
 }
 
 .about-info{
@@ -1445,11 +1445,14 @@ section.mountain{
     left:0;
     top: 45%;
     transform:translateY(-50%);
+    width: 50px;
+    height: 100px;
 }
 
 .media-icons > a{
     height: 30px;
     width: 20px;
+    margin-bottom: 13%;
 }
 .about-img img{
     min-width: 0;

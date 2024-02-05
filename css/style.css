@@ -450,7 +450,7 @@ header.sticky .nav-bar{
     font-weight: 700;
     transform: translateY(-80px);
 }   
-.section-title-02::before{
+/* .section-title-02::before{
     content: "";
     position: absolute;
     width: 70px;
@@ -458,7 +458,7 @@ header.sticky .nav-bar{
     right: 0;
     bottom: 0;
     background: var(--accent-color);
-}
+} */
 .container{
     position: relative;
     flex-direction: column;

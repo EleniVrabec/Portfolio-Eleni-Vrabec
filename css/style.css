@@ -279,9 +279,9 @@ header.sticky .nav-bar{
     display: inline-block;
     margin-top: 25px;
     margin-left: 29%;
-    padding: 20px 50px;
+    padding: 12px 50px;
     letter-spacing: 1px;
-    border-radius: 10px;
+    border-radius: 100px;
     z-index: 100;
 }
 .btn-home:hover{
@@ -301,10 +301,10 @@ header.sticky .nav-bar{
     display: inline-block;
     margin-top: 25px;
   /*   margin-left: 30%; */
-    padding: 20px 50px;
+     padding: 12px 50px;
     letter-spacing: 1px;
     border: none;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 .btn > a{
     color: var(--modal-bg-color);
@@ -791,10 +791,10 @@ margin-bottom: 20px;
 .get-in-touch .contact-card{
     position: relative;
     align-items: center;
-    width: 90%;
+    width: 100%;
     background: var(--card-bg-color);
     box-shadow: var(--box-shadow);
-    padding: 50px;
+    padding: 10px;
     border-radius: 10px;
     column-gap: 50px;
    /*  height: 30vh; */
@@ -823,7 +823,11 @@ margin-bottom: 20px;
     -webkit-text-fill-color: transparent;
     opacity: .9;
 }
-
+.contact-card .contact-btn .btn{
+    font-size: 0.8rem;
+    padding: 8px 50px;
+    
+}
 
 /* contact me */
 .contact .container .content{
@@ -1309,6 +1313,7 @@ margin-bottom: 50px;
 margin: auto;
 display: block;
 text-align: center;
+border-radius: 100px;
 z-index: 100;
 }
 .btn-home:hover{
@@ -1614,9 +1619,11 @@ section.mountain{
     line-height: 40px;
 }
 
-.contact-card .contact-btn .btn{
+ */
+ .contact-card .contact-btn .btn{
     font-size: 0.8rem;
-} */
+    
+}
 footer{
 
     bottom: 0;

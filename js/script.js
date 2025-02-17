@@ -211,3 +211,24 @@ const homeSection = document.querySelector(".home");
 
 });
 
+
+    function openTab(event, tabName) {
+        // Hide all tab contents
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabContents.forEach(tab => tab.style.display = 'none');
+
+        // Remove "active" class from all tab buttons
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        tabButtons.forEach(button => button.classList.remove('active'));
+
+        // Show selected tab and mark as active
+        document.getElementById(tabName).style.display = 'block';
+        event.currentTarget.classList.add('active');
+    }
+
+    // Ensure the first tab is visible on page load
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector('.tab-content').style.display = 'block';
+        document.querySelector('.tab-btn').classList.add('active');
+    });
+

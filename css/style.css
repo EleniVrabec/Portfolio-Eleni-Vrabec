@@ -580,10 +580,11 @@ margin-bottom: 20px;
 
 .bars{
     display: flex;
+   margin: 10px;
     flex-wrap: wrap;
     flex-direction: column;
     height: 60vh;
-    justify-content: space-between;
+    justify-content:first baseline;
     
 
 }
@@ -593,6 +594,7 @@ margin-bottom: 20px;
     box-shadow: var(--box-shadow);
     margin-bottom: 10px;
     margin-left: 10px;
+    margin-right: 10px;
     border-radius: 6px;
     padding: 15px;
     width: 50%;
@@ -628,7 +630,7 @@ margin-bottom: 20px;
     background: var(--second-color);
     border-radius: 2px;
 }
-
+/*
 .bar .html::before{
     width: 95%;
 }
@@ -647,11 +649,66 @@ margin-bottom: 20px;
 .bar .node::before{
     width: 50%;
 }
-
+*/
 .skills-img{
     position: relative;
 }
-
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.skill-category {
+    flex: 1;
+    min-width: 300px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.skill-category h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.bars {
+    display: flex;
+    justify-content: first baseline;
+    list-style: none;
+    padding: 10;
+}
+.bar {
+    text-align: left;
+    background: #fff;
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.bar .info {
+    font-weight: bold;
+    color: #555;
+}
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        
+    }
+    .bar {
+        text-align: left;
+        background: #fff;
+        padding: 10px;
+        margin: 5px 5px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
 /* -----------------------portfolio */
 .portfolio .container .content{
     width: 100%;
@@ -982,6 +1039,38 @@ footer a{
     color: var(--body-bg-color);
 }
 
+  /* Styling for Tabs */
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-btn.active {
+    color: #ff5722;
+    border-bottom: 3px solid #ff5722;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 @media  screen and (max-width: 1070px){
     body{
         display: flex;
@@ -1227,11 +1316,11 @@ footer a{
     flex-direction:column ;
     height: 70vh;
     width: 90%;
-    justify-content:space-evenly;
+    justify-content:first baseline;
 
 }
 .bar{
-    width: 50%;
+    width: 100%;
 }
 /* ------------------------------- */
 .contact .content{
@@ -1527,7 +1616,7 @@ section.mountain{
      flex-wrap: wrap; 
     flex-direction:column ;
     height: 80vh;
-    justify-content:space-between;
+    justify-content:first baseline;
 
 }
 .bar{

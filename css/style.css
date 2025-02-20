@@ -181,7 +181,7 @@ header.sticky .nav-bar{
     width: 100%; /* Ensures it covers the whole width */
    /*  height: 100%; */
  /*    z-index: -4; */
-    opacity: 0.5; /* Adjust the opacity as needed for the desired darkness */
+    opacity: 0.3; /* Adjust the opacity as needed for the desired darkness */
 }
 
 
@@ -263,6 +263,13 @@ header.sticky .nav-bar{
    /*  color: var(--line-color); */
 
 }
+.mainBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .btn-home{
     align-self: center;
     position: relative;
@@ -271,14 +278,14 @@ header.sticky .nav-bar{
     font-size: var(--normal-font-size);
     font-weight: 500;
     display: inline-block;
-    margin-top: 25px;
-    margin-left: 29%;
+   /*  margin-top: 25px;
+    margin-left: 29%; */
     padding: 12px 50px;
     letter-spacing: 1px;
     border-radius: 100px;
     z-index: 100;
 }
-.btn-home:hover{
+.mainBtn .btn-home:hover{
     background-color: var(--accent-color);
     color: var(--first-color);
     transition: 3s ease-in-out;
@@ -367,8 +374,8 @@ header.sticky .nav-bar{
     background-attachment: fixed;
     position: relative;
     max-width: 1150px;
-   /*  margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto; 
     padding: 6rem 2rem;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -1077,7 +1084,7 @@ footer a{
         left: 0;
         z-index:1;
        /*  z-index: -5; */
-        opacity: 0.5; /* Adjust the opacity as needed for the desired darkness */
+        opacity: 0.3; /* Adjust the opacity as needed for the desired darkness */
     }
     .colored-text{
         position: relative;
@@ -1547,7 +1554,7 @@ section.mountain{
 .about-img img{
     min-width: 0;
     width: 70%;
-    height: 300px;
+    height: 320px;
 }
 #about{
     display: block;
@@ -1719,7 +1726,13 @@ footer{
 
 
 @media (max-width: 768px) {
-   
+    .mainBtn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+   }
     .section-title-02 {
         display: block !important;
         transform: translateY(0) !important;

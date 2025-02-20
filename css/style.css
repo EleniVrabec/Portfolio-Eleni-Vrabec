@@ -348,17 +348,17 @@ header.sticky .nav-bar{
 
  .plat {
     display: flex;
-    justify-content: flex-end; /* Ändrat från "right" till "flex-end" för att placera det till höger */
-    align-items: flex-end; /* Ändrat från "right" till "flex-end" för att placera det längst ner */
+    justify-content: flex-end;
+    align-items: flex-end; 
     position: absolute;
     bottom: 0;
-    right: 0; /* För att placera det längst till höger */
-    margin-right: 50px; /* Lägg till marginal för att undvika kollision med högerkanten */
-    margin-bottom: 0px; /* Lägg till marginal för att undvika kollision med botten */
+    right: 0; 
+    margin-right: 50px; 
+    margin-bottom: 0px; 
 }
  .plat > img {
     width: 500px;
-    border-radius: 5%; /* Om du vill ha avrundade hörn på bilden */
+    border-radius: 5%; 
 }
 
 
@@ -379,14 +379,7 @@ header.sticky .nav-bar{
     margin-top: 2%;
     margin-bottom: 2%;
 }
-/* section:nth-child(4){
-    width: 100%;
-    background-image:url("/img/bck-mount.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-  } */
+
  section.mountain{
     width: 100%;
     height: 100vh;
@@ -412,21 +405,7 @@ header.sticky .nav-bar{
         display: block;
       }
   
-  
-  
-  
-  
-  
-/*  .mountain > img{
-    width: 100%;
-    height: 100vh;
-   
-   background-image:url("/img/bck-mount.jpg") ;  
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-} */
+
 .sub-section{
     position: relative;
     max-width:  1150px;
@@ -450,15 +429,7 @@ header.sticky .nav-bar{
     font-weight: 700;
     transform: translateY(-80px);
 }   
-/* .section-title-02::before{
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 5px;
-    right: 0;
-    bottom: 0;
-    background: var(--accent-color);
-} */
+
 .container{
     position: relative;
     flex-direction: column;
@@ -630,26 +601,7 @@ margin-bottom: 20px;
     background: var(--second-color);
     border-radius: 2px;
 }
-/*
-.bar .html::before{
-    width: 95%;
-}
 
-.bar .css::before{
-    width: 85%;
-}
-
-.bar .javascript::before{
-    width: 70%;
-}
-
-.bar.php::before{
-    width: 80%;
-}
-.bar .node::before{
-    width: 50%;
-}
-*/
 .skills-img{
     position: relative;
 }
@@ -782,16 +734,24 @@ margin-bottom: 20px;
    display: none;
     opacity: 0;
     transition: .3s ease;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+    overflow: hidden; /* Prevent scrolling */
 }
 .portfolio-model.active{
    /*  visibility: visible; */
-    display: inline-block;
-    width: 100%;
+  /*   display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*   width: 100%; */
     opacity: 1;
-    top: 0px;
-    left: 200;
-    overflow-y: auto;
+   /*  top: 0px;
+    left: 200; */
+  /*   overflow-y: auto; */
 
 }
 /* .portfolio-model-body.active{
@@ -800,22 +760,37 @@ margin-bottom: 20px;
 
 
 .portfolio-model-body{
-    position: relative;
+  /*   position: relative; */
     background: var(--modal-bg-color);
-    max-width: 600px;
+  /*   max-width: 50%; */
+  max-width: 90vw;
+  width: 50%;
+  max-height: 80vh;
     margin: 20px;
-    margin-left: 5%;
+  /*   margin-left: 5%; */
     padding: 40px;
+    overflow: auto; /* Allows scrolling inside if needed */
+   /*  display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; */
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    transform: translateY(-50px);
+  
    
-    transition: .5s ease;
+    transition: transform 0.3s ease;
 }
 
 .portfolio-model.active .portfolio-model-body{
-    transform: translateY(0);
-    transform: translateX(500px);
+    transform: scale(1);
+  /*   transform: translateY(0); */
+   /*  transform: translateX(500px); */
+}
+.projectButtons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .portfolio-close-btn{
     position: absolute;
@@ -1399,6 +1374,7 @@ margin-bottom: 50px;
         }
     /* common styles for all sections */
 .btn-home{
+    width: 80%;
 margin: auto;
 display: block;
 text-align: center;

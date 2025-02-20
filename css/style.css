@@ -133,6 +133,7 @@ header.sticky .nav-bar{
     margin-right: auto;
     padding: 0 20px;
     transition: .6s ease;
+    z-index: 1000;
 }
 
 .nav-items a{
@@ -155,22 +156,6 @@ header.sticky .nav-bar{
     display: none;
 }
 
-/* home */
-/* 
-.home{
-    background-image: url(/img/bck-mount.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    position: relative;
-  
-    min-height: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-  
-    flex-direction: column;
-    overflow: hidden;
-} */
 .home {
     position: relative;
     min-height: 100vh;
@@ -178,6 +163,7 @@ header.sticky .nav-bar{
     margin-right: auto;
     flex-direction: column;
     overflow: hidden;
+    z-index: 1;
 }
 
 .home::before {
@@ -190,7 +176,11 @@ header.sticky .nav-bar{
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
+   /*  z-index: -10; */
+    width: 100%; /* Ensures it covers the whole width */
+   /*  height: 100%; */
+ /*    z-index: -4; */
     opacity: 0.5; /* Adjust the opacity as needed for the desired darkness */
 }
 
@@ -211,16 +201,20 @@ header.sticky .nav-bar{
     margin-right: 40px;
     transform: translate(10px, 400px);
     position: fixed;
-    z-index: 100;
+    z-index: 100000;
+    overflow: hidden;
 
 }
 /* .home-container */ .media-icons a{
     color: var(--second-color);
     font-size: 1.5em;
+    z-index: 99999;
   /*   margin: 10px 0; */
 }
 /* .home-container */ .media-icons a:hover{
     color: var(--accent-color);
+    overflow: hidden;
+    z-index: 99999;
 }
 .home-container .info h2{
     text-align: center;
@@ -373,8 +367,8 @@ header.sticky .nav-bar{
     background-attachment: fixed;
     position: relative;
     max-width: 1150px;
-    margin-left: auto;
-    margin-right: auto;
+   /*  margin-left: auto;
+    margin-right: auto; */
     padding: 6rem 2rem;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -389,6 +383,8 @@ header.sticky .nav-bar{
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+  /*   z-index: -10; */
+    margin: 0;
     
 }
 
@@ -484,6 +480,7 @@ header.sticky .nav-bar{
 .skills .container .content {
     column-gap: 40px;
     width: 100%;
+    margin-top: 2%;
     
 }
 .skills-description{
@@ -491,6 +488,7 @@ header.sticky .nav-bar{
     margin-bottom: 50px;
 }
 .skills-description h3{
+    z-index: 10000;
     font-size: 2em;
     margin-bottom: 5px;
 }
@@ -664,6 +662,7 @@ margin-bottom: 20px;
 /* -----------------------portfolio */
 .portfolio .container .content{
     width: 100%;
+    margin-top: 2%;
     
 }
 
@@ -1056,11 +1055,13 @@ footer a{
     }
     .home {
         position: relative;
-        min-height: 100vh;
+      /*   min-height: 100vh; */
         margin-left: auto;
         margin-right: auto;
         flex-direction: column;
         overflow: hidden;
+        margin: 0;
+        z-index: 1;
     }
     
     .home::before {
@@ -1069,11 +1070,13 @@ footer a{
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
+        margin: 0;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: -1;
+        z-index:1;
+       /*  z-index: -5; */
         opacity: 0.5; /* Adjust the opacity as needed for the desired darkness */
     }
     .colored-text{
@@ -1109,10 +1112,12 @@ footer a{
         visibility: hidden;
         opacity: 0;
         transition: .3s ease;
+        z-index: 9999;
     }
     .navigation.active{
         visibility: visible;
         opacity: 1;
+        z-index: 9999 !important;
     }
     .nav-items{
         position: relative;
@@ -1128,9 +1133,11 @@ footer a{
         box-shadow: var(--box-shadow);
         transform: translateY(-50px);
         transition: .3s ease;
+        z-index: 10000;
     }
     .navigation.active .nav-items{
         transform: translateY(0px);
+        z-index: 99999 !important;
     }
     .nav-items a{
         margin: 15px 50px;
@@ -1147,6 +1154,7 @@ footer a{
         right: 0;
         margin: 10px;
         cursor: pointer;
+        z-index: 10001;
     }
 .nav-menu-btn{
    /*  background: url(../img/hamburger.png) no-repeat; */
@@ -1173,7 +1181,7 @@ footer a{
 }
 .about-img img{
     min-width: 0;
-    width: 100%;
+    width: 80%;
 }
 .home-container .info h3{
     text-align: center;
@@ -1191,10 +1199,11 @@ footer a{
 }
 .media-icons{
     margin-bottom: 80px;
-    z-index: 100;
+    z-index: 99999;
     margin-left: 40px;
     width: 40px;
     height: 100px;
+    overflow: hidden;
 }
 
 .about-info{
@@ -1221,7 +1230,7 @@ footer a{
 }
 /* ------------------------ */
 .portfolio-model{
-    z-index: 9999999;
+    z-index: 99999;
     position:fixed ;
     width: 100%;
     height: 100vh;
@@ -1345,11 +1354,8 @@ margin-bottom: 50px;
 
 }
 
-@media screen and (max-width:600px) {
-    *{
-        height: auto;
-        overflow-x: hidden;
-    }
+ @media screen and (max-width:600px) {
+   /*
     body{
         display: flex;
         justify-content: space-between;
@@ -1372,7 +1378,7 @@ margin-bottom: 50px;
             background: rgba(255, 255, 255, 0.1);
             box-shadow: var(--box-shadow);
         }
-    /* common styles for all sections */
+   
 .btn-home{
     width: 80%;
 margin: auto;
@@ -1417,18 +1423,18 @@ z-index: 100;
     z-index: 1;
     display: block;
     visibility: hidden;
-  }
+  } */
 .section{
     display: block;
-    height: 100vh;
+  /*   height: 100vh; */
    /*  background-attachment: fixed;
     position:absolute; */
     max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
-    padding: 6rem 2rem;
+ /*    padding: 6rem 2rem;
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 5%; */
  
 }
 .section-title-01{
@@ -1451,6 +1457,9 @@ z-index: 100;
     margin-right: auto;
     flex-direction: column;
     overflow: hidden;
+    margin: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 .home::before {
@@ -1459,11 +1468,13 @@ z-index: 100;
     background-repeat: no-repeat;
     background-size:cover;
     position: absolute;
+    width: 100%;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: -1;
+    z-index: 1;
+   /*  z-index: -5; */
     opacity: 0.5; 
 }
 .mountain{
@@ -1475,23 +1486,25 @@ z-index: 100;
     right: 0;
     bottom: 0;
     left: 0;
-   /*  z-index: -1;
-    opacity: 0.5; */
+     z-index: -5;
+    opacity: 0.5; 
 }
 .mountain img {
     max-width: 100%;
-    height: auto;
+   /*  height: auto;
+    z-index: -5; */
 }
 
 section.mountain{
     width: 100%;
-    height: 100vh;
+  /*   height: 100vh; */
     position: relative;
      background-image:url("../img/bck-mount.jpg") ; 
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
+  /*   z-index: -5; */
     
 }
 /* .home-container .home-img{
@@ -1509,7 +1522,7 @@ section.mountain{
 } */
 .media-icons{
   /*   margin-bottom: 80px; */
-    z-index: 200;
+    z-index: 2000000;
     margin-left: 2%; 
     position: fixed;
     left:0;
@@ -1517,6 +1530,7 @@ section.mountain{
     transform:translateY(-50%);
     width: 50px;
     height: 100px;
+    overflow: hidden;
 }
 
 .media-icons > a{
@@ -1524,10 +1538,16 @@ section.mountain{
     width: 20px;
     margin-bottom: 13%;
 }
+.about-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
 .about-img img{
     min-width: 0;
-    width: 100%;
-    height: 400px;
+    width: 70%;
+    height: 300px;
 }
 #about{
     display: block;
@@ -1567,11 +1587,12 @@ section.mountain{
 
 #skills{
     display: block;
-    margin-top: 5%;
+    z-index: 10000;
+   /*  margin-top: 5%; */
     height: auto;
 }
 #portfolio{
-    margin-top: 5%;
+ /*    margin-top: 5%; */
     height: auto;
 }
 #contact{
@@ -1615,7 +1636,7 @@ section.mountain{
 }
 /* ------------------portfolio----------------------- */
 .portfolio-model{
-    z-index: 9999999;
+    z-index: 99999;
     position:fixed ;
     width: 100%;
     height: 100vh;
@@ -1694,4 +1715,60 @@ footer{
     bottom: 0;
 }
 
+}
+
+
+@media (max-width: 768px) {
+   
+    .section-title-02 {
+        display: block !important;
+        transform: translateY(0) !important;
+        text-align: center;
+    }
+
+   
+    .home-container .info h2 {
+        font-size: 2.5em;
+        line-height: 50px;
+    }
+    .home-container .info h3 {
+        font-size: 1em;
+        line-height: 40px;
+    }
+
+   
+    .section {
+     
+        padding: 4rem 1rem;
+    }
+    
+  
+    .navigation {
+        display: none;
+        z-index: 100000;
+    }
+    .navigation.active {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+        z-index: 99999 !important;
+    }
+    
+
+    .portfolio-model-body {
+        transform: none !important;
+        margin-top: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+   
+    .bars {
+        flex-direction: column;
+        height: auto;
+    }
+    .bar {
+        width: 95%;
+    }
 }

@@ -1037,11 +1037,12 @@ footer a{
     font-weight: bold;
     transition: 0.3s;
     border-bottom: 3px solid transparent;
+    color: var(--first-color);
 }
 
 .tab-btn.active {
-    color: #ff5722;
-    border-bottom: 3px solid #ff5722;
+    color: var(--hover-color);
+    border-bottom: 3px solid var(--hover-color);
 }
 
 .tab-content {

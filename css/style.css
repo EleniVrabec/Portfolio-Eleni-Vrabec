@@ -33,7 +33,9 @@
 
 
 }
-
+html, body {
+    overflow-x: hidden;
+  }
 *{
     margin: 0;
     padding: 0;
@@ -43,6 +45,7 @@
 html{
 scroll-behavior: smooth;
 }
+
 
 body{
     background-color: var(--body-bg-color);

@@ -129,17 +129,19 @@ const homeSection = document.querySelector(".home");
   const ctx = canvas.getContext("2d");
 
   // Set the size of the canvas
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
+ // canvas.width = window.innerWidth;
+ // canvas.height = window.innerHeight;
+  canvas.width = homeSection.offsetWidth;
+  canvas.height = homeSection.offsetHeight;
+  
   // Append the canvas to the body
-  document.body.appendChild(canvas);
-
+ // document.body.appendChild(canvas);
+  homeSection.appendChild(canvas);
   // Position the canvas absolutely
   canvas.style.position = "absolute";
   canvas.style.top = "0";
   canvas.style.left = "0";
-
+  canvas.style.zIndex = "0";
   // Adjust the number of clouds and their properties as needed
   const fogParticles = [];
 
@@ -185,8 +187,10 @@ const homeSection = document.querySelector(".home");
 
   window.addEventListener("resize", () => {
     // Adjust canvas size on window resize
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = homeSection.offsetWidth;
+    canvas.height = homeSection.offsetHeight;
+   // canvas.width = window.innerWidth;
+  //  canvas.height = window.innerHeight;
 
     // Clear existing particles and create new ones
     fogParticles.length = 0;

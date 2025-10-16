@@ -681,7 +681,7 @@ margin-bottom: 20px;
     --surface: var(--card-bg-color, #0f1220);
     --text: var(--third-color, #cdd3f5);
     --heading: var(--first-color, #fff);
-    --brand: var(--second-color, #6aa9ff);
+ 
     --stroke: color-mix(in oklab, var(--text), black 35%);
     --muted: color-mix(in oklab, var(--text), black 15%);
   }
@@ -690,11 +690,7 @@ margin-bottom: 20px;
     text-align: center;
     margin: 0 0 18px;
   }
-  
-  #skills .colored-text {
-    color: var(--brand);
-  }
-  
+
   /* Keep your tabs as-is; no overrides to .tabs / .tab-btn here */
   
   /* CONTENT WRAPPERS */

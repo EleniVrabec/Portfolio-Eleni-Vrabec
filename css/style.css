@@ -487,7 +487,7 @@ header.sticky .nav-bar{
 /* skills section */
 /* ------------------------------------------------------------------------ */
 /* ---------------------------------------------------------------------- */
-.skills .container .content {
+/* .skills .container .content {
     column-gap: 40px;
     width: 100%;
     margin-top: 2%;
@@ -654,8 +654,8 @@ margin-bottom: 20px;
 .bar .info {
     font-weight: bold;
     color: #555;
-}
-@media (max-width: 768px) {
+} */
+/* @media (max-width: 768px) {
     .skills-container {
         flex-direction: column;
         
@@ -668,7 +668,164 @@ margin-bottom: 20px;
         border-radius: 5px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-}
+} */
+
+
+/* Minimal, conflict-safe styling scoped to #skills
+   Uses your existing CSS variables if present: 
+   --card-bg-color, --first-color, --second-color, --third-color
+*/
+
+#skills {
+    --radius: 12px;
+    --surface: var(--card-bg-color, #0f1220);
+    --text: var(--third-color, #cdd3f5);
+    --heading: var(--first-color, #fff);
+    --brand: var(--second-color, #6aa9ff);
+    --stroke: color-mix(in oklab, var(--text), black 35%);
+    --muted: color-mix(in oklab, var(--text), black 15%);
+  }
+  
+  #skills .section-title-02 {
+    text-align: center;
+    margin: 0 0 18px;
+  }
+  
+  #skills .colored-text {
+    color: var(--brand);
+  }
+  
+  /* Keep your tabs as-is; no overrides to .tabs / .tab-btn here */
+  
+  /* CONTENT WRAPPERS */
+  #skills .content { margin-top: 12px; }
+  
+  /* ---------- Education: timeline ---------- */
+  #skills .timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+  }
+  
+  #skills .timeline li {
+    display: grid;
+    gap: 4px;
+    padding: 14px 16px;
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+  
+  #skills .timeline .time {
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+  
+  #skills .timeline p {
+    margin: 0;
+    color: var(--heading);
+  }
+  
+  /* ---------- Skills: grid + chips ---------- */
+  #skills .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+  }
+  
+  #skills .skill-card {
+    grid-column: span 6;
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius);
+    background: var(--surface);
+    padding: 16px;
+  }
+  
+  #skills .skill-card h3 {
+    margin: 0 0 10px;
+    color: var(--heading);
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+  }
+  
+  #skills .chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  #skills .chip {
+    padding: 6px 10px;
+    border: 1px solid var(--stroke);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    color: var(--text);
+    background: color-mix(in oklab, var(--surface), white 4%);
+  }
+  
+ /* ---------- Languages ---------- */
+#skills .lang-list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  #skills .lang-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 16px 18px;
+    border: 1px solid var(--stroke);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--heading);
+    transition: transform 0.2s ease, background 0.2s ease;
+  }
+  
+  #skills .lang-list li:hover {
+    background: color-mix(in oklab, var(--surface), white 4%);
+    transform: translateY(-2px);
+  }
+  
+  #skills .lang-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #skills .lang-flag {
+    font-size: 1.25rem;
+    line-height: 1;
+  }
+  
+  #skills .lang-name {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+  }
+  
+  #skills .lang-level {
+    color: var(--muted);
+    font-size: 0.95rem;
+  }
+  
+  @media (max-width: 480px) {
+    #skills .lang-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px) {
+    #skills .skill-card { grid-column: span 12; }
+  }
+  
 /* -----------------------portfolio */
 .portfolio .container .content{
     width: 100%;

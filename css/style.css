@@ -1942,3 +1942,71 @@ footer{
         width: 95%;
     }
 }
+
+/* ===== Tabs content: don't overflow horizontally ===== */
+#skills .content,
+#skills .tab-content {
+  width: 100%;
+  overflow-x: clip;   /* prevent sideways scroll inside tabs */
+}
+
+/* ===== Education (timeline) — responsive grid ===== */
+#skills .timeline {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+#skills .timeline li {
+  min-width: 0;                /* allow shrinking inside grid cells */
+  word-wrap: break-word;
+  overflow-wrap: anywhere;     /* long words/URLs won’t push width */
+}
+
+/* Smaller phones: single column */
+@media (max-width: 420px) {
+  #skills .timeline {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Skills (cards + chips) — responsive grid ===== */
+#skills .skill-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: start;
+}
+
+/* Ensure cards don't force width */
+#skills .skill-card {
+  grid-column: auto !important;  /* override any span rules */
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Chips wrap nicely and never overflow */
+#skills .chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  min-width: 0;
+}
+
+#skills .chip {
+  max-width: 100%;
+  white-space: normal;      /* allow wrapping inside pill */
+  word-break: break-word;   /* break long tokens */
+}
+
+/* Super-narrow screens */
+@media (max-width: 420px) {
+  #skills .skill-grid { grid-template-columns: 1fr; gap: 12px; }
+  #skills .skill-card { padding: 14px; }
+}
+
+/* ===== Optional: tabs themselves can wrap on narrow screens ===== */
+.tabs { flex-wrap: wrap; }
+.tab-btn { flex: 0 1 auto; }
+
